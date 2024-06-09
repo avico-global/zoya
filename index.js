@@ -75,6 +75,7 @@ function displayBanner(bannerData) {
 
 function displayData(articles) {
   const container = document.getElementById("data-container");
+  console.log("articles", articles);
 
   container.innerHTML = "";
   articles.forEach((article) => {
@@ -111,10 +112,18 @@ function displayData(articles) {
     descriptionElement.textContent = article.articleContent;
     articleElement.appendChild(descriptionElement);
 
-    const readMoreBtn = document.createElement("button");
+    /*    const readMoreBtn = document.createElement("button");
     readMoreBtn.classList.add("btnPrimary", "read-more");
-    readMoreBtn.textContent = "Read More";
-    articleElement.appendChild(readMoreBtn);
+    readMoreBtn.textContent = "Read More";*/
+
+    const readMoreUrl = `./detail.html?${article?.article_category?.name}/${article?.key}`;
+    const readMoreAnchor = document.createElement("a");
+    readMoreAnchor.classList.add("btnPrimary", "read-more");
+    readMoreAnchor.textContent = "Read More";
+    readMoreAnchor.href = readMoreUrl;
+    readMoreAnchor.target = "_blank"; 
+    readMoreAnchor.rel = "noopener noreferrer";
+    articleElement.appendChild(readMoreAnchor);
 
     container.appendChild(articleElement);
   });
