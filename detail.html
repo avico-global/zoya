@@ -1,94 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-...."
-    />
-    <script src="detail.js" defer></script>
-    <title>ZOYA | Static HTML Template</title>
-  </head>
 
-  <body>
-    <!-- Header -->
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="./about.html">About</a>
-      <a href="./contact.html">Contact</a>
-    </nav>
-    <header>
-      <div>
-        <div class="search">
-          <i class="fas fa-search"></i>
-          <input type="text" placeholder="SEARCH" />
-        </div>
-        <div class="logo" id="logo"></div>
-        <div class="socials">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fas fa-times"></i>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-...." />
+  <title>ZOYA | Static HTML Template</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./contact.html">Contact</a>
+    <a href="./detail.html">Blog Detail</a>
+  </nav>
+  <header>
+    <div>
+      <div class="search">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="SEARCH" />
       </div>
-    </header>
-
-    <!-- Banner -->
-    <div class="banner" id="banner"></div>
-
-    <!-- Feed -->
-    <div class="feed">
-      <div class="feed-container">
-        <div id="data-container-detail" class="article-list detail-feed-left"></div>
-        <div class="right-bar">
-          <div class="about-me">
-            <h3 class="bg-white px-5 font-bold text-lg -mt-9">About</h3>
-            <img
-              alt="Background Image"
-              src="https://cheerup2.theme-sphere.com/bold/wp-content/uploads/sites/8/2017/07/about-side.jpg"
-            />
-            <br />
-            <p>
-              I'm Shane, a girly girl and lover of life. Join me on the journey
-              to find latest in fashion.
-            </p>
-            <br />
-            <b> Read More </b>
-          </div>
-        </div>
+      <div class="logo" id="logo">
+        <img
+          src="https://apisitem.ecommcube.com/images/industry_template_images/661e433e5ef9ee4c88efc8b7/1717854850616-8024vl.png"
+          alt="Logo" />
       </div>
-      <div id="latest-posts-container" class="container_post"></div>
+      <div class="socials">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fas fa-times"></i>
+      </div>
     </div>
-
-    <!-- Footer -->
-    <div class="footer">
-      <div class="footer-container">
-        <div class="footer-left">
-          <p><strong className="font-bold">About</strong></p>
-          <img
-            src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/user-img-1.png"
-            alt="Background Image"
-            height="170"
-            width="200"
-          />
-          <p class="about-text">
-            Sed ut in perspiciatis unde omnis iste natus error sit on i tatem
-            accusantium doloremque laudan totam rem aperiam eaque.
+  </header>
+  <!-- Banner -->
+  <div class="banner" id="banner">
+    <img
+      src="https://apisitem.ecommcube.com/images/industry_template_images/661e433e5ef9ee4c88efc8b7/1717855231480-o7q7tq.jpg"
+      alt="BackgroundBanner" fetchpriority="high" loading="eager" decoding="async" data-nimg="fill"
+      class="banner-img" />
+    <div class="banner-container">
+      <div class="badge"></div>
+      <h1 style="width: 768px">A Serene Place for Deep Thinkers</h1>
+      <p>
+        Finding Peace in Silence: The Perfect Retreats for Reflective Minds
+      </p>
+    </div>
+  </div>
+  <!-- Feed -->
+  <div class="feed">
+    <div class="feed-container">
+      <div id="data-container-detail" class="article-list detail-feed-left">
+        <h1></h1>
+        <h4>
+          A Serene Place for Deep Thinkers | by Usama Bhatti | Jun 3, 2024
+        </h4>
+        <h4>The Importance of Serenity</h4>
+        <p>In the hustle and bustle of modern life, finding a serene place to retreat to has become a necessity for
+          many, especially for deep thinkers. These are the individuals who thrive on reflection, contemplation, and the
+          exploration of ideas that go beyond
+          the surface. For them, serenity isn’t just a luxury; it’s a vital part of their intellectual and emotional
+          well-being.</p>
+        <p>For deep thinkers, a serene environment is akin to fertile soil for a gardener. It provides the ideal
+          conditions for the seeds of thought to germinate, grow, and flourish. Without the distractions and noise of
+          everyday life, deep thinkers can delve
+          into their minds, uncovering insights and perspectives that might otherwise remain hidden.</p>
+        <p><strong>Serenity allows for uninterrupted thinking.</strong> It offers a sanctuary where the mind can wander
+          freely, making connections and discoveries that are often missed in a chaotic environment.</p>
+        <h3>Characteristics of a Serene Place</h3>
+        <p>Not every quiet spot can be considered a serene place for deep thinkers. There are specific characteristics
+          that make an environment truly conducive to deep thought:</p>
+        <h4>The Perfect Retreat: Examples of Serene Places</h4>
+        <p>There are various types of serene places that cater to the needs of deep thinkers. Here are a few examples:
+        </p>
+        <p>Libraries are quintessential havens for thinkers. The quiet ambiance, the smell of books, and the
+          availability of vast knowledge make them ideal for contemplation and study.</p>
+        <p>Nature has a profound effect on the mind. A walk through a secluded forest can clear the mind, provide fresh
+          air, and offer a sense of peace that is hard to find in urban settings.</p>
+        <p>The rhythmic sound of waves and the vast expanse of the ocean create a perfect backdrop for deep thinking.
+          The beach provides a sense of infinity, encouraging the mind to explore limitless possibilities.</p>
+        <h3>Creating Your Own Serene Space</h3>
+        <p>If finding a perfect retreat isn't always possible, creating your own serene space at home can be just as
+          effective. Here are some tips to transform your environment into a sanctuary for deep thinking:</p>
+        <h4>Tips for Creating a Serene Space</h4>
+        <p>For deep thinkers, a serene place is not just a retreat; it is a necessity. Whether it is a cozy library, a
+          secluded forest, or a quiet beach, these places provide the tranquility and inspiration needed for profound
+          thought. By understanding the characteristics
+          of these serene environments and possibly creating one at home, deep thinkers can ensure they always have a
+          sanctuary to retreat to and explore the depths of their minds.</p>
+        <p><strong>Remember</strong>, the right environment can turn a simple thought into a groundbreaking idea. Find
+          your serene place, and let your mind wander freely.</p>
+        <hr />
+      </div>
+      <div class="right-bar">
+        <div class="about-me">
+          <h3 class="bg-white px-5 font-bold text-lg -mt-9">About</h3>
+          <img alt="Background Image"
+            src="https://cheerup2.theme-sphere.com/bold/wp-content/uploads/sites/8/2017/07/about-side.jpg" />
+          <br />
+          <p>
+            I'm Shane, a girly girl and lover of life. Join me on the journey
+            to find latest in fashion.
           </p>
+          <br />
+          <b> Read More </b>
         </div>
       </div>
     </div>
-  </body>
+    <div id="latest-posts-container" class="container_post">
+      <h2 class="font-bold text-3xl bg-white px-6">Latest Posts</h2>
+      <a href="./detail.html" class="post-box"><img
+          src="https://apisitem.ecommcube.com/images/industry_template_images/661e433e5ef9ee4c88efc8b7/1717768282385-rqh8xu.jpg" />
+        <p>
+          In the hustle and bustle of everyday life, sometimes all we need is
+          a little escape—a chance to hit
+        </p>
+      </a>
+      <a href="./detail.html" class="post-box"><img
+          src="https://apisitem.ecommcube.com/images/industry_template_images/661e433e5ef9ee4c88efc8b7/1717769443466-46leav.jpg" />
+        <p>
+          ## Dazzle Under the Spotlight: A Showcase of Stunning Prom Attire
+          Prom night is a magical occasion,
+        </p>
+      </a>
+      <a href="./detail.html" class="post-box"><img
+          src="https://apisitem.ecommcube.com/images/industry_template_images/661e433e5ef9ee4c88efc8b7/1717825506039-6pvhkm.jpg" />
+        <p>
+          ## 10 Divine Recipes for a Light and Flavorful Dinner
+          **Introduction:** In the quest for a satisfyi
+        </p>
+      </a>
+      <a href="./detail.html" class="post-box"><img
+          src="https://apisitem.ecommcube.com/images/industry_template_images/661e433e5ef9ee4c88efc8b7/1717854084609-ejoxt5.jpg" />
+        <p>
+          The crisp, cold air whips around me as I stand at the base of the
+          towering mountain. The snow-covere
+        </p>
+      </a>
+      <a href="./detail.html" class="post-box"><img
+          src="https://apisitem.ecommcube.com/images/industry_template_images/661e433e5ef9ee4c88efc8b7/1717855231480-o7q7tq.jpg" />
+        <p>
+          ## A Serene Place for Deep Thinkers #### The Importance of Serenity
+          In the hustle and bustle of mo
+        </p>
+      </a>
+      <a href="./detail.html" class="post-box"><img
+          src="https://apisitem.ecommcube.com/images/industry_template_images/661e433e5ef9ee4c88efc8b7/1717855458279-jgqhrc.jpg" />
+        <p>
+          ## Embracing Minimalism In a world where clutter and chaos seem to
+          be the norm, minimalism offers a
+        </p>
+      </a>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <p><strong className="font-bold">About</strong></p>
+        <img src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/user-img-1.png" alt="Background Image"
+          height="170" width="200" />
+        <p class="about-text">
+          Sed ut in perspiciatis unde omnis iste natus error sit on i tatem
+          accusantium doloremque laudan totam rem aperiam eaque.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
